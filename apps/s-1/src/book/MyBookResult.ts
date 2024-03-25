@@ -16,7 +16,7 @@ class MyBookResult {
     @Field(() => MyBookEnum)
     @ApiProperty({
         required: true,
-        type: () => MyBookEnum
+        enum: MyBookEnum
     })
     bookType!: "goodBook" | "niceBook" | "mehBook";
 
